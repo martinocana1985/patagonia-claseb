@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PATAGONIA CLASE B</title>
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-<header class="py-3" style="background-color: #003366;">
-  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-    <img src="IMAGES/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
-<nav>
-  <ul>
-    <li><a href="PAGES/">Propiedades</a></li>
-    <li><a href="PAGES/oportunidades.html">Oportunidades</a></li>
-    <li><a href="PAGES/historia.html">Historia</a></li>
-    <li><a href="PAGES/contactenos.html">Contactenos</a></li>
-  </ul>
-</nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patagonia Clase B</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+ <body>
+  <!-- HEADER -->
+  <header class="bg-primary text-white p-3">
+    <div class="container">
+      <img src="IMAGES/logo.jpeg" alt="Logo Patagonia Clase B" width="150" class="d-block mx-auto mb-3">
+      <h1 class="text-center">Patagonia Clase B</h1>
+      <nav class="nav justify-content-center">
+        <a class="nav-link text-white" href="index.html">Inicio</a>
+        <a class="nav-link text-white" href="PAGES/propiedades.html">Propiedades</a>
+        <a class="nav-link text-white" href="PAGES/oportunidades.html">Oportunidades</a>
+        <a class="nav-link text-white" href="PAGES/historia.html">Historia</a>
+        <a class="nav-link text-white" href="PAGES/contactenos.html">Contáctenos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BOTONES REDES FIXED -->
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
+    <a href="https://wa.me/5493516970413" target="_blank">
+      <img src="IMAGES/whatsapp.png" alt="Whatsapp" style="width:50px; height:auto;">
+    </a>
+    <a href="https://instagram.com/tuusuario" target="_blank">
+      <img src="IMAGES/instagram.png" alt="Instagram" style="width:50px; height:auto;">
+    </a>
+    <a href="https://facebook.com/tuusuario" target="_blank">
+      <img src="IMAGES/facebook.png" alt="Facebook" style="width:50px; height:auto;">
+    </a>
   </div>
-</header>
 
-<!-- BOTONES REDES FIXED -->
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
-  <a href="https://wa.me/5493516970413" target="_blank">
-  <img src="IMAGES/whatsapp.png" alt="Whatsapp" style="width:50px; height:auto;">
-</a>
-<a href="https://instagram.com/tuusuario" target="_blank">
-  <img src="IMAGES/instagram.png" alt="Instagram" style="width:50px; height:auto;">
-</a>
-<a href="https://facebook.com/tuusuario" target="_blank">
-  <img src="IMAGES/facebook.png" alt="Facebook" style="width:50px; height:auto;">
-</a>
-</div>
+  <!-- MAIN -->
+  <main class="container my-5">
+    <!-- Sección Bienvenida -->
+    <section class="mb-5">
+      <h1 class="text-center mb-4">Bienvenidos a Patagonia Clase B</h1>
+      <p class="lead text-justify">
+        En Patagonia Clase B, nos apasiona ayudarte a encontrar el lugar ideal para vivir, invertir o comenzar un nuevo capítulo. Somos una empresa especializada en la venta de propiedades, con un enfoque personalizado, transparente y comprometido con cada uno de nuestros clientes.
+      </p>
+      <p class="text-justify">
+        Con años de experiencia en el mercado inmobiliario, ofrecemos un amplio catálogo de inmuebles que incluye casas, departamentos, terrenos y propiedades comerciales en ubicaciones estratégicas. Ya sea que estés buscando tu primera vivienda, una propiedad para inversión o el espacio perfecto para tu emprendimiento, estamos para acompañarte en cada paso del proceso.
+      </p>
+    </section>
 
-    <main class="container my-5">
-      <section class="mb-5">
-        <h1 class="text-center mb-4">Bienvenidos a Patagonia Clase B</h1>
-        <p class="lead text-justify">
-          En Patagonia Clase B, nos apasiona ayudarte a encontrar el lugar ideal para vivir, invertir o comenzar un nuevo capítulo. Somos una empresa especializada en la venta de propiedades, con un enfoque personalizado, transparente y comprometido con cada uno de nuestros clientes.
-        </p>
-        <p class="text-justify">
-          Con años de experiencia en el mercado inmobiliario, ofrecemos un amplio catálogo de inmuebles que incluye casas, departamentos, terrenos y propiedades comerciales en ubicaciones estratégicas. Ya sea que estés buscando tu primera vivienda, una propiedad para inversión o el espacio perfecto para tu emprendimiento, estamos para acompañarte en cada paso del proceso.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-center mb-4">Nuestras Propiedades</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="IMAGES/propiedades/1.jpg" class="card-img-top" alt="Casa moderna en barrio cerrado" />
-              <div class="card-body text-center">
-                <button class="btn btn-primary">COMPRAR</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="IMAGES/propiedades/2.jpg" class="card-img-top" alt="Casa familiar con jardín amplio" />
-              <div class="card-body text-center">
-                <button class="btn btn-primary">COMPRAR</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="IMAGES/propiedades/3.jpg" class="card-img-top" alt="Departamento céntrico de dos ambientes" />
-              <div class="card-body text-center">
-                <button class="btn btn-primary">COMPRAR</button>
-              </div>
+    <!-- Sección Propiedades Destacadas -->
+    <section>
+      <h2 class="text-center mb-4">Nuestras Propiedades</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="IMAGES/propiedades/1.jpg" class="card-img-top" alt="Casa moderna en barrio cerrado" />
+            <div class="card-body text-center">
+              <button class="btn btn-primary">COMPRAR</button>
             </div>
           </div>
         </div>
-      </section>
-
-<section class="text-center my-5">
-  <video src="videos/21.mp4" controls class="rounded" style="width:25%;"></video>
-</section>
-
-      <aside class="mt-5">
-        <div class="alert alert-info" role="alert">
-          * Estas regulaciones se aplican sólo a los alquileres en la Ciudad Autónoma de Buenos Aires.
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="IMAGES/propiedades/2.jpg" class="card-img-top" alt="Casa familiar con jardín amplio" />
+            <div class="card-body text-center">
+              <button class="btn btn-primary">COMPRAR</button>
+            </div>
+          </div>
         </div>
-        <div class="d-flex flex-column align-items-center">
-          <a href="http://www.dnrpi.jus.gov.ar/" target="_blank" rel="noopener noreferrer" class="mb-2">Registro de la Propiedad Inmueble de Capital Federal</a>
-          <h3>* Defensa del consumidor</h3>
-          <a href="https://www.argentina.gob.ar/economia/industria-y-comercio/defensadelconsumidor/" target="_blank" rel="noopener noreferrer">
-            Ir a página Defensa del Consumidor
-          </a>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="IMAGES/propiedades/3.jpg" class="card-img-top" alt="Departamento céntrico de dos ambientes" />
+            <div class="card-body text-center">
+              <button class="btn btn-primary">COMPRAR</button>
+            </div>
+          </div>
         </div>
-      </aside>
-    </main>
+      </div>
+    </section>
 
-    <footer class="bg-light py-3 text-center">
-      <p class="mb-0">TODOS LOS DERECHOS RESERVADOS - Patagonia Clase B</p>
-    </footer>
+    <!-- Sección Video -->
+    <section class="text-center my-5">
+      <video src="videos/21.mp4" controls class="rounded" style="width:25%;"></video>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Aside Información -->
+    <aside class="mt-5">
+      <div class="alert alert-info" role="alert">
+        * Estas regulaciones se aplican sólo a los alquileres en la Ciudad Autónoma de Buenos Aires.
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <a href="http://www.dnrpi.jus.gov.ar/" target="_blank" rel="noopener noreferrer" class="mb-2">Registro de la Propiedad Inmueble de Capital Federal</a>
+        <h3>* Defensa del consumidor</h3>
+        <a href="https://www.argentina.gob.ar/economia/industria-y-comercio/defensadelconsumidor/" target="_blank" rel="noopener noreferrer">
+          Ir a página Defensa del Consumidor
+        </a>
+      </div>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">TODOS LOS DERECHOS RESERVADOS - Patagonia Clase B</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
