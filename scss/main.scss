@@ -1,0 +1,213 @@
+// =====================
+// VARIABLES
+// =====================
+$color-principal: #003366;
+$color-bg: #f5f5f5;
+$color-texto: #333;
+$color-footer: gray;
+$color-card-shadow: rgba(0, 51, 102, 0.10);
+$color-alt: #2196f3;
+$font-principal: Arial, sans-serif;
+$radius: 12px;
+$radius-card: 18px;
+$transition-rapida: 0.2s;
+$transition-media: 0.3s;
+
+// =====================
+// MIXINS
+// =====================
+@mixin sombra-card {
+  box-shadow: 0 4px 24px 0 $color-card-shadow;
+}
+@mixin transicion($propiedad: all, $duracion: 0.3s) {
+  transition: $propiedad $duracion;
+}
+@mixin media-mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+// =====================
+// RESET GENERAL
+// =====================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// =====================
+// TIPOGRAFÍA UNIFICADA
+// =====================
+html {
+  font-size: 16px;
+}
+body, h1, h2, h3, h4, h5, h6, p, a, .btn, .nav-link {
+  font-family: $font-principal !important;
+  font-weight: normal !important;
+}
+h1, h2, h3 {
+  font-weight: bold !important;
+}
+
+// =====================
+// BODY
+// =====================
+body {
+  background-color: $color-bg;
+  color: $color-texto;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// =====================
+// HEADER
+// =====================
+header {
+  img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+// =====================
+// HISTORIA
+// =====================
+.historia-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .grafico-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 0;
+    width: 100%;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 450px !important;
+      width: 100%;
+      height: auto;
+      border-radius: $radius;
+      background: #fff;
+      @include sombra-card;
+      @include transicion(transform, $transition-media);
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      @include media-mobile {
+        max-width: 100% !important;
+      }
+    }
+
+    figcaption {
+      font-size: 1.1rem;
+      color: $color-principal;
+      font-weight: bold;
+      text-align: center;
+      margin: 8px 0;
+      max-width: 90%;
+    }
+  }
+}
+
+// =====================
+// FOOTER
+// =====================
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: $color-footer;
+}
+
+// =====================
+// BOTONES REDES SOCIALES (clase)
+// =====================
+.redes-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    @include transicion(transform, $transition-rapida);
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}
+
+// =====================
+// CARDS Y BOTONES
+// =====================
+%estilo-card-base {
+  border-radius: $radius-card;
+  background: #fff;
+  @include sombra-card;
+  @include transicion(box-shadow, $transition-media);
+}
+
+.card {
+  @extend %estilo-card-base;
+  &:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    transform: scale(1.02);
+  }
+}
+
+.btn {
+  border-radius: $radius;
+  font-weight: bold;
+  @include transicion(background, $transition-rapida);
+  @include transicion(transform, $transition-rapida);
+
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+
+// Variantes de color de botones (operador each)
+$btn-colores: (
+  "primary": $color-principal,
+  "success": #33b249,
+  "accent": $color-alt
+);
+
+@each $nombre, $valor in $btn-colores {
+  .btn-#{$nombre} {
+    background: $valor;
+    color: #fff;
+    &:hover {
+      background: darken($valor, 8%);
+    }
+  }
+}
+
+// =====================
+// MEDIA QUERIES
+// =====================
+@include media-mobile {
+  body {
+    font-size: 15px;
+    padding: 0 4px;
+  }
+  .container, main {
+    padding: 0 4px !important;
+  }
+  h1, h2 {
+    font-size: 1.3rem;
+  }
+  .card {
+    margin-bottom: 16px;
+  }
+}
