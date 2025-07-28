@@ -49,49 +49,38 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="py-3 fixed-top shadow" style="background-color: #003366; z-index: 1030;">
+  <!-- HEADER CON FRANJA INFERIOR -->
+<header class="py-3 fixed-top shadow bg-header">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <img src="images/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">INICIO</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="pages/propiedades.html">PROPIEDADES</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="pages/oportunidades.html">OPORTUNIDADES</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="pages/historia.html">HISTORIA</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="pages/contactenos.html">CONTACTENOS</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- FRANJA INFERIOR -->
+  <div class="franja-inferior"></div>
+</header>
 
-    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-      <img src="images/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">INICIO</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/propiedades.html">PROPIEDADES</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/oportunidades.html">OPORTUNIDADES</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/historia.html">HISTORIA</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/contactenos.html">CONTACTENOS</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
   <!-- CARRUSEL -->
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-
     <div class="carousel-inner">
-
-      <!-- SLIDE 1 -->
       <div class="carousel-item active">
         <img src="images/hero1.jpg" class="d-block w-100" alt="Nuestra experiencia">
-       
       </div>
-
-      <!-- SLIDE 2 -->
       <div class="carousel-item">
         <img src="images/hero2.jpg" class="d-block w-100" alt="Nuestro compromiso">
-
       </div>
-
-      <!-- SLIDE 3 -->
       <div class="carousel-item">
         <img src="images/hero3.jpg" class="d-block w-100" alt="Inversión segura">
-       
       </div>
-
     </div>
-
-    <!-- CONTROLES -->
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
@@ -127,22 +116,19 @@
       <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
       <div class="row text-center">
         <div class="col-md-4">
-          <img src="./images/experiencia.jpg" alt="Experiencia" width="240">
+          <img src="images/experiencia.jpg" alt="Experiencia" width="240">
           <h4 class="my-2">Experiencia</h4>
-          <p>Experiencia
-Somos sinónimo de tradición y permanencia. Brindamos un servicio de experincia que se adecua permanentemente a las nuevas tendencias y modalidades del negocio desarrollista e inmobiliario..</p>
+          <p>Somos sinónimo de tradición y permanencia. Brindamos un servicio que se adecua permanentemente a las nuevas tendencias y modalidades del negocio desarrollista e inmobiliario.</p>
         </div>
         <div class="col-md-4">
-          <img src="./images/compromiso.jpg" alt="Compromiso" width="240">
+          <img src="images/compromiso.jpg" alt="Compromiso" width="240">
           <h4 class="my-2">Compromiso</h4>
-          <p>Trayectoria
-Más de 34 años de trayectoria en el incesante y cambiante mundo del desarrollo inmobiliario en sus diferentes tipologías: construcción de edificios, centros comerciales y urbanizaciones..</p>
+          <p>Más de 34 años de trayectoria en el incesante y cambiante mundo del desarrollo inmobiliario en sus diferentes tipologías: construcción de edificios, centros comerciales y urbanizaciones.</p>
         </div>
         <div class="col-md-4">
-          <img src="./images/inversionsegura.jpg" alt="Inversión" width="240">
+          <img src="images/inversionsegura.jpg" alt="Inversión segura" width="240">
           <h4 class="my-2">Inversión segura</h4>
-          <p>Respaldo
-La cultura empresarial que nos sostiene e inspira está basada en los valores de integridad, profesionalismo, confidencialidad, trabajo en equipo y mejora continua..</p>
+          <p>La cultura empresarial que nos sostiene e inspira está basada en los valores de integridad, profesionalismo, confidencialidad, trabajo en equipo y mejora continua.</p>
         </div>
       </div>
     </section>
@@ -193,7 +179,8 @@ La cultura empresarial que nos sostiene e inspira está basada en los valores de
       <hr>
       <div class="d-flex justify-content-between small">
         <span>© 2025 Todos los derechos reservados</span>
-        <span>Desarrollado por <a href="#"><img src="/images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
+        <span>Desarrollado por <a href="#"><img src="images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
+
       </div>
     </div>
   </footer>
