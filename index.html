@@ -3,16 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compra, venta e inversión de propiedades en lugares estratégicos con Patagonia Clase B. Atención personalizada y opciones seguras.">
   <title>Patagonia Clase B</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- CSS propio -->
   <link rel="stylesheet" href="css/estilos.css" />
+
+  <style>
+    .carrusel-mediano {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carrusel-mediano .carousel-inner {
+      height: 100%;
+    }
+
+    .carrusel-mediano .carousel-item img {
+      max-height: 100%;
+      width: auto;
+      margin: auto;
+      display: block;
+    }
+
+    @media (max-width: 576px) {
+      .carrusel-mediano {
+        height: 180px;
+      }
+    }
+
+    .redes-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="py-3" style="background-color: #003366;">
+  <header class="py-3 fixed-top shadow" style="background-color: #003366; z-index: 1030;">
+
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
       <img src="images/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
       <nav>
@@ -27,105 +66,93 @@
     </div>
   </header>
 
+  <!-- CARRUSEL -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+    <div class="carousel-inner">
+
+      <!-- SLIDE 1 -->
+      <div class="carousel-item active">
+        <img src="images/hero1.jpg" class="d-block w-100" alt="Nuestra experiencia">
+       
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="carousel-item">
+        <img src="images/hero2.jpg" class="d-block w-100" alt="Nuestro compromiso">
+
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="carousel-item">
+        <img src="images/hero3.jpg" class="d-block w-100" alt="Inversión segura">
+       
+      </div>
+
+    </div>
+
+    <!-- CONTROLES -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
   <!-- BOTONES REDES FIXED -->
   <div class="redes-fixed">
-    <a href="https://wa.me/5493516970413" target="_blank">
+    <a href="https://wa.me/5493516970413" target="_blank" aria-label="WhatsApp">
       <img src="images/whatsapp.png" alt="Whatsapp" style="width:50px; height:auto;">
     </a>
-    <a href="https://instagram.com/tuusuario" target="_blank">
+    <a href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram">
       <img src="images/instagram.png" alt="Instagram" style="width:50px; height:auto;">
     </a>
-    <a href="https://facebook.com/tuusuario" target="_blank">
+    <a href="https://facebook.com/tuusuario" target="_blank" aria-label="Facebook">
       <img src="images/facebook.png" alt="Facebook" style="width:50px; height:auto;">
     </a>
   </div>
 
   <!-- MAIN -->
   <main class="container my-5">
-
-    <!-- Sección Bienvenida -->
     <section class="mb-5">
       <h1 class="text-center mb-4">Bienvenidos a Patagonia Clase B</h1>
-      <p class="lead">
-        En Patagonia Clase B, nos apasiona ayudarte a encontrar el lugar ideal para vivir, invertir o comenzar un nuevo capítulo. Somos una empresa especializada en la venta de propiedades, con un enfoque personalizado, transparente y comprometido con cada uno de nuestros clientes.
-      </p>
-      <p>
-        Con años de experiencia en el mercado inmobiliario, ofrecemos un amplio catálogo de inmuebles que incluye casas, departamentos, terrenos y propiedades comerciales en ubicaciones estratégicas. Ya sea que estés buscando tu primera vivienda, una propiedad para inversión o el espacio perfecto para tu emprendimiento, estamos para acompañarte en cada paso del proceso.
-      </p>
+      <p class="lead">En Patagonia Clase B, nos apasiona ayudarte a encontrar el lugar ideal para vivir, invertir o comenzar un nuevo capítulo...</p>
+      <p>Con años de experiencia en el mercado inmobiliario, ofrecemos un amplio catálogo de inmuebles...</p>
     </section>
 
-    <!-- Sección: Por qué elegirnos -->
     <section class="mb-5">
       <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
       <div class="row text-center">
         <div class="col-md-4">
           <img src="./images/experiencia.jpg" alt="Experiencia" width="240">
-          <h4 class="my-2"> </h4>
-          <p>Más de 20 años en el rubro inmobiliario.</p>
+          <h4 class="my-2">Experiencia</h4>
+          <p>Experiencia
+Somos sinónimo de tradición y permanencia. Brindamos un servicio de experincia que se adecua permanentemente a las nuevas tendencias y modalidades del negocio desarrollista e inmobiliario..</p>
         </div>
         <div class="col-md-4">
           <img src="./images/compromiso.jpg" alt="Compromiso" width="240">
-          <h4 class="my-2"> </h4>
-          <p>Acompañamos y asesoramos en todo el proceso.</p>
+          <h4 class="my-2">Compromiso</h4>
+          <p>Trayectoria
+Más de 34 años de trayectoria en el incesante y cambiante mundo del desarrollo inmobiliario en sus diferentes tipologías: construcción de edificios, centros comerciales y urbanizaciones..</p>
         </div>
         <div class="col-md-4">
           <img src="./images/inversionsegura.jpg" alt="Inversión" width="240">
-          <h4 class="my-2"> </h4>
-          <p>Opciones pensadas para tu tranquilidad y futuro.</p>
+          <h4 class="my-2">Inversión segura</h4>
+          <p>Respaldo
+La cultura empresarial que nos sostiene e inspira está basada en los valores de integridad, profesionalismo, confidencialidad, trabajo en equipo y mejora continua..</p>
         </div>
       </div>
     </section>
 
-    <!-- Sección Propiedades Destacadas -->
-    <section>
-      <h2 class="text-center mb-4">Nuestras Propiedades</h2>
-      <div class="row justify-content-center">
-
-        <!-- Propiedad 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/propiedades/1.jpg" class="card-img-top" alt="Casa moderna en barrio cerrado" />
-            <div class="card-body text-center">
-              <button class="btn btn-primary">COMPRAR</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Propiedad 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/propiedades/2.jpg" class="card-img-top" alt="Casa familiar con jardín amplio" />
-            <div class="card-body text-center">
-              <button class="btn btn-primary">COMPRAR</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Propiedad 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/propiedades/3.jpg" class="card-img-top" alt="Departamento céntrico de dos ambientes" />
-            <div class="card-body text-center">
-              <button class="btn btn-primary">COMPRAR</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Sección Video -->
-    <section class="text-center my-5">
-      <video src="videos/21.mp4" controls class="rounded" style="width:100%;"></video>
-    </section>
-
-    <!-- Sección Testimonios -->
     <section class="mb-5">
       <h2 class="text-center mb-4">Testimonios</h2>
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="card p-3 mb-3">
-            <p>“Gracias a Patagonia Clase B encontré la casa ideal para mi familia. ¡Excelente atención y asesoramiento!”</p>
+            <p>“Gracias a Patagonia Clase B encontré la casa ideal...”</p>
             <div class="d-flex align-items-center">
               <img src="images/testimonio1.jpg" alt="Testimonio 1" class="rounded-circle me-2" width="48">
               <span><strong>Carla G.</strong></span>
@@ -134,7 +161,7 @@
         </div>
         <div class="col-md-5">
           <div class="card p-3 mb-3">
-            <p>“Invertí en un departamento y todo el proceso fue transparente y seguro. ¡Recomendados!”</p>
+            <p>“Invertí en un departamento y todo el proceso fue transparente...”</p>
             <div class="d-flex align-items-center">
               <img src="images/testimonio2.jpg" alt="Testimonio 2" class="rounded-circle me-2" width="48">
               <span><strong>Martín R.</strong></span>
@@ -143,36 +170,35 @@
         </div>
       </div>
     </section>
-
-    <!-- CTA y contacto rápido -->
-    <section class="my-5 text-center">
-      <h2>¿Listo para dar el siguiente paso?</h2>
-      <p class="mb-3">Contactanos hoy mismo para recibir asesoría personalizada y descubrir tu próxima inversión.</p>
-      <a href="pages/contactenos.html" class="btn btn-accent btn-lg">Contactar ahora</a>
-    </section>
-
-    <!-- Aside Información -->
-    <aside class="mt-5">
-      <div class="alert alert-info" role="alert">
-        * Estas regulaciones se aplican sólo a los alquileres en la Ciudad Autónoma de Buenos Aires.
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <a href="http://www.dnrpi.jus.gov.ar/" target="_blank" rel="noopener noreferrer" class="mb-2">Registro de la Propiedad Inmueble de Capital Federal</a>
-        <h3>* Defensa del consumidor</h3>
-        <a href="https://www.argentina.gob.ar/economia/industria-y-comercio/defensadelconsumidor/" target="_blank" rel="noopener noreferrer">
-          Ir a página Defensa del Consumidor
-        </a>
-      </div>
-    </aside>
-
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p class="mb-0">TODOS LOS DERECHOS RESERVADOS - Patagonia Clase B</p>
+  <footer class="footer-jbsrur mt-5 pt-4 pb-3 border-top">
+    <div class="container">
+      <div class="row text-start text-md-start">
+        <div class="col-md-4 mb-3">
+          <img src="images/logo.jpeg" alt="Logo Patagonia Clase B" class="mb-3" style="max-width: 150px;">
+          <p class="small">PATAGONIA CLASE B - Desarrollos Inmobiliarios...</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6>CASA CENTRAL</h6>
+          <p>Av. Vélez Sarsfield n° 898<br>Córdoba Capital</p>
+          <p>Ventas: +54 9 351 688-7104<br>Alquileres: +54 9 351 2359666</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6>ZONA NORTE</h6>
+          <p>Av. Rafael Nuñez n° 2225<br>Córdoba Capital</p>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between small">
+        <span>© 2025 Todos los derechos reservados</span>
+        <span>Desarrollado por <a href="#"><img src="/images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
+      </div>
+    </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
