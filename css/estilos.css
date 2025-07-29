@@ -22,9 +22,20 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 100px; /* Ajustado por header fixed-top */
+  padding-top: 120px; /* Ajustado por header fixed-top con franja inferior */
 }
 
+/* ----------- LOGO HEADER RESPONSIVO ----------- */
+header img {
+  max-width: 150px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  header img {
+    max-width: 120px;
+  }
+}
 
 /* ----------- HISTORIA -------------- */
 .historia-contenido {
@@ -71,8 +82,6 @@ body {
   margin: 8px 0;
   max-width: 90%;
 }
-
-
 
 /* ----------- REDES FIJAS -------------- */
 .redes-fixed {
@@ -133,7 +142,6 @@ body {
 .btn-accent:hover {
   background: rgb(12, 130, 223);
 }
-
 
 /* ----------- RESPONSIVE GENERAL -------------- */
 @media (max-width: 600px) {
@@ -240,9 +248,8 @@ body {
 .footer-jbsrur span.text-color-custom {
   color: #003366;
 }
-body {
-  padding-top: 200px; /* Ajustá si tu header es más alto o más bajo */
-}
+
+/* ----------- HEADER -------------- */
 .bg-header {
   background-color: #003366;
   z-index: 1030;
