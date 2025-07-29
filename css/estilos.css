@@ -22,8 +22,9 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 120px; /* Ajustado por header fixed-top con franja inferior */
+  padding-top: 140px; /* ajustado para header + franja inferior */
 }
+
 
 /* ----------- LOGO HEADER RESPONSIVO ----------- */
 header img {
@@ -162,10 +163,11 @@ header img {
 
 /* ----------- CARRUSEL GRANDE CON COVER -------------- */
 #heroCarousel {
-  height: 600px;
+  height: calc(100vh - 140px); /* ocupa toda la pantalla sin taparse */
   position: relative;
   overflow: hidden;
 }
+
 
 #heroCarousel .carousel-inner,
 #heroCarousel .carousel-item {
@@ -177,6 +179,17 @@ header img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 768px) {
+  #heroCarousel {
+    height: 300px;
+  }
+
+  #heroCarousel .carousel-item img {
+    object-fit: contain;
+    background-color: #000; /* o el color que prefieras de fondo */
+  }
 }
 
 /* ----------- CAPTIONS DEL CARRUSEL -------------- */
@@ -201,10 +214,6 @@ header img {
 }
 
 @media (max-width: 768px) {
-  #heroCarousel {
-    height: 300px;
-  }
-
   .carousel-caption {
     bottom: 10%;
     left: 5%;
@@ -249,7 +258,7 @@ header img {
   color: #003366;
 }
 
-/* ----------- HEADER -------------- */
+/* ----------- HEADER Y FRANJA INFERIOR -------------- */
 .bg-header {
   background-color: #003366;
   z-index: 1030;
