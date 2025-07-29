@@ -22,7 +22,7 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 140px; /* ajustado para header + franja inferior */
+  padding-top: 0; /* corregido para que no agregue espacio extra */
 }
 
 /* ----------- LOGO HEADER RESPONSIVO ----------- */
@@ -165,7 +165,8 @@ header img {
 
 /* ----------- CARRUSEL GRANDE CON COVER -------------- */
 #heroCarousel {
-  height: calc(100vh - 140px); /* ocupa toda la pantalla sin taparse */
+  margin-top: 140px; /* ✅ nuevo: separa del header fijo */
+  height: auto;
   position: relative;
   overflow: hidden;
 }

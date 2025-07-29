@@ -13,27 +13,18 @@
 
   <style>
     .carrusel-mediano {
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: auto;
     }
 
     .carrusel-mediano .carousel-inner {
-      height: 100%;
+      height: auto;
     }
 
     .carrusel-mediano .carousel-item img {
-      max-height: 100%;
-      width: auto;
-      margin: auto;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
       display: block;
-    }
-
-    @media (max-width: 576px) {
-      .carrusel-mediano {
-        height: 180px;
-      }
     }
 
     .redes-fixed {
@@ -50,26 +41,25 @@
 <body>
 
   <!-- HEADER CON FRANJA INFERIOR -->
-<header class="py-3 fixed-top shadow bg-header">
-  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-    <img src="images/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
-    <nav>
-      <ul class="nav">
-        <li class="nav-item"><a class="nav-link text-white" href="index.html">INICIO</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="pages/propiedades.html">PROPIEDADES</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="pages/oportunidades.html">OPORTUNIDADES</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="pages/historia.html">HISTORIA</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="pages/contactenos.html">CONTACTENOS</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- FRANJA INFERIOR -->
-  <div class="franja-inferior"></div>
-</header>
-
+  <header class="py-3 fixed-top shadow bg-header">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <img src="images/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">INICIO</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="pages/propiedades.html">PROPIEDADES</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="pages/oportunidades.html">OPORTUNIDADES</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="pages/historia.html">HISTORIA</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="pages/contactenos.html">CONTACTENOS</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- FRANJA INFERIOR -->
+    <div class="franja-inferior"></div>
+  </header>
 
   <!-- CARRUSEL -->
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div id="heroCarousel" class="carousel slide carrusel-mediano" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="images/hero1.jpg" class="d-block w-100" alt="Nuestra experiencia">
@@ -180,7 +170,6 @@
       <div class="d-flex justify-content-between small">
         <span>© 2025 Todos los derechos reservados</span>
         <span>Desarrollado por <a href="#"><img src="images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
-
       </div>
     </div>
   </footer>
