@@ -25,7 +25,6 @@ body {
   padding-top: 140px; /* ajustado para header + franja inferior */
 }
 
-
 /* ----------- LOGO HEADER RESPONSIVO ----------- */
 header img {
   max-width: 150px;
@@ -150,12 +149,15 @@ header img {
     font-size: 15px;
     padding: 0 4px;
   }
+
   .container, main {
     padding: 0 4px !important;
   }
+
   h1, h2 {
     font-size: 1.3rem;
   }
+
   .card {
     margin-bottom: 16px;
   }
@@ -167,7 +169,6 @@ header img {
   position: relative;
   overflow: hidden;
 }
-
 
 #heroCarousel .carousel-inner,
 #heroCarousel .carousel-item {
@@ -181,14 +182,16 @@ header img {
   object-position: center;
 }
 
+/* ✅ Corrección para dispositivos móviles */
 @media (max-width: 768px) {
   #heroCarousel {
-    height: 300px;
+    height: auto;
   }
 
   #heroCarousel .carousel-item img {
-    object-fit: contain;
-    background-color: #000; /* o el color que prefieras de fondo */
+    height: auto;
+    object-fit: cover;
+    background-color: #000; /* opcional */
   }
 }
 
