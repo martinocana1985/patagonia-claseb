@@ -22,7 +22,12 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 0; /* corregido para que no agregue espacio extra */
+  padding-top: 140px; /* necesario para que el header no tape el contenido */
+}
+@media (max-width: 576px) {
+  body {
+    padding-top: 180px;
+  }
 }
 
 /* ----------- LOGO HEADER RESPONSIVO ----------- */
