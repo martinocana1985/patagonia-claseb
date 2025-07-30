@@ -171,7 +171,6 @@ header img {
 
 /* CARRUSEL */
 #heroCarousel {
-  margin-top: 140px;
   height: auto;
   position: relative;
   overflow: hidden;
@@ -306,6 +305,7 @@ header img {
     color: #333 !important;
   }
 }
+
 html, body {
   margin: 0 !important;
   padding: 0 !important;
