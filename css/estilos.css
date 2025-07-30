@@ -22,15 +22,16 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 140px; /* necesario para que el header no tape el contenido */
+  padding-top: 140px;
 }
+
 @media (max-width: 576px) {
   body {
     padding-top: 180px;
   }
 }
 
-/* ----------- LOGO HEADER RESPONSIVO ----------- */
+/* LOGO HEADER RESPONSIVO */
 header img {
   max-width: 150px;
   height: auto;
@@ -42,7 +43,7 @@ header img {
   }
 }
 
-/* ----------- HISTORIA -------------- */
+/* HISTORIA */
 .historia-contenido {
   display: flex;
   flex-direction: column;
@@ -88,7 +89,7 @@ header img {
   max-width: 90%;
 }
 
-/* ----------- REDES FIJAS -------------- */
+/* REDES FIJAS */
 .redes-fixed {
   position: fixed;
   bottom: 20px;
@@ -107,7 +108,7 @@ header img {
   transform: scale(1.08);
 }
 
-/* ----------- CARDS -------------- */
+/* CARDS */
 .card {
   border-radius: 18px;
   background: #fff;
@@ -120,7 +121,7 @@ header img {
   transform: scale(1.02);
 }
 
-/* ----------- BOTONES -------------- */
+/* BOTONES */
 .btn {
   border-radius: 12px;
   font-weight: bold;
@@ -148,7 +149,7 @@ header img {
   background: rgb(12, 130, 223);
 }
 
-/* ----------- RESPONSIVE GENERAL -------------- */
+/* RESPONSIVE GENERAL */
 @media (max-width: 600px) {
   body {
     font-size: 15px;
@@ -168,9 +169,9 @@ header img {
   }
 }
 
-/* ----------- CARRUSEL GRANDE CON COVER -------------- */
+/* CARRUSEL */
 #heroCarousel {
-  margin-top: 140px; /* ✅ nuevo: separa del header fijo */
+  margin-top: 140px;
   height: auto;
   position: relative;
   overflow: hidden;
@@ -188,7 +189,6 @@ header img {
   object-position: center;
 }
 
-/* ✅ Corrección para dispositivos móviles */
 @media (max-width: 768px) {
   #heroCarousel {
     height: auto;
@@ -197,11 +197,11 @@ header img {
   #heroCarousel .carousel-item img {
     height: auto;
     object-fit: cover;
-    background-color: #000; /* opcional */
+    background-color: #000;
   }
 }
 
-/* ----------- CAPTIONS DEL CARRUSEL -------------- */
+/* CAPTIONS DEL CARRUSEL */
 .carousel-caption {
   bottom: 20%;
   left: 10%;
@@ -240,7 +240,7 @@ header img {
   }
 }
 
-/* ----------- FOOTER INSTITUCIONAL -------------- */
+/* FOOTER */
 .footer-jbsrur {
   background-color: #f8f8f8;
   color: #333;
@@ -267,7 +267,7 @@ header img {
   color: #003366;
 }
 
-/* ----------- HEADER Y FRANJA INFERIOR -------------- */
+/* HEADER Y FRANJA */
 .bg-header {
   background-color: #003366;
   z-index: 1030;
@@ -278,12 +278,14 @@ header img {
   background-color: #f5f5f5;
   width: 100%;
 }
-/* Forzar modo claro en todos los navegadores */
+
+/* FORZAR MODO CLARO */
 :root {
   color-scheme: light;
   background-color: #f5f5f5;
   color: #333;
 }
+
 @media (prefers-color-scheme: dark) {
   body, html {
     background-color: #f5f5f5 !important;
@@ -303,4 +305,14 @@ header img {
     background-color: #fff !important;
     color: #333 !important;
   }
+}
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  scroll-padding-top: 140px; /* por si usás anclas */
+}
+
+header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
