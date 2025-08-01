@@ -59,12 +59,13 @@ body {
   color: $color-texto;
   line-height: 1.6;
   overflow-x: hidden;
-  padding-top: 180px; // Header + franja
+  padding-top: 140px; // Menos espacio
 
   @include media-mobile {
-    padding-top: 220px; // Más alto en mobile si header se agranda
+    padding-top: 180px; // También reducido en mobile
   }
 }
+
 
 // =====================
 // HEADER

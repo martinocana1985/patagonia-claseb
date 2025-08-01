@@ -7,39 +7,36 @@
   <title>Patagonia Clase B</title>
 
   <!-- Bootstrap CSS -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- CSS propio -->
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="scss/main.css" />
-
 </head>
-<body></body>
 
+<body>
   <!-- HEADER -->
   <header class="py-3 fixed-top shadow bg-header">
-  <div class="container">
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../images/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">INICIO</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="pages/propiedades.html">PROPIEDADES</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="pages/oportunidades.html">OPORTUNIDADES</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="pages/historia.html">HISTORIA</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="pages/contactenos.html">CONTACTENOS</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="franja-inferior"></div>
-</header>
-
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.jpeg" alt="Logo Patagonia Clase B" width="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navPrincipal">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/propiedades.html">PROPIEDADES</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/oportunidades.html">OPORTUNIDADES</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/historia.html">HISTORIA</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/contactenos.html">CONTACTENOS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="franja-inferior"></div>
+  </header>
 
   <!-- CARRUSEL -->
   <div id="heroCarousel" class="carousel slide carrusel-mediano" data-bs-ride="carousel" data-bs-interval="2000">
@@ -159,6 +156,5 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
