@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historia | Patagonia Clase B</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/estilos.css" />
+ <link rel="stylesheet" href="../scss/main.css" />
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="py-3 fixed-top shadow bg-header">
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
       <img src="../images/logo.jpeg" alt="Logo Patagonia Clase B" width="150" />
@@ -24,20 +26,21 @@
     <div class="franja-inferior"></div>
   </header>
 
+  <!-- BOTONES REDES -->
   <div class="redes-fixed">
-    <a href="https://wa.me/5493516970413" target="_blank">
-      <img src="../images/whatsapp.png" alt="Whatsapp" style="width:50px; height:auto;">
+    <a href="https://wa.me/5493516970413" target="_blank" aria-label="WhatsApp">
+      <img src="../images/whatsapp.png" alt="Whatsapp" width="50">
     </a>
-    <a href="https://instagram.com/tuusuario" target="_blank">
-      <img src="../images/instagram.png" alt="Instagram" style="width:50px; height:auto;">
+    <a href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+      <img src="../images/instagram.png" alt="Instagram" width="50">
     </a>
-    <a href="https://facebook.com/tuusuario" target="_blank">
-      <img src="../images/facebook.png" alt="Facebook" style="width:50px; height:auto;">
+    <a href="https://facebook.com/tuusuario" target="_blank" aria-label="Facebook">
+      <img src="../images/facebook.png" alt="Facebook" width="50">
     </a>
   </div>
 
- <main class="container my-5 mt-5 pt-5" style="margin-top: 7rem;">
-
+  <!-- CONTENIDO -->
+  <main class="container pt-5 mt-5">
     <section class="historia-empresa">
       <h1 class="text-center mb-4">Nuestra Historia</h1>
       <p class="lead text-center">
@@ -45,27 +48,24 @@
       </p>
       <div class="historia-contenido">
         <p>
-         
-                 
-
-
           Fundada en el año 2000 en El Calafate, nuestra empresa nació con una visión clara: liderar la intermediación de bienes raíces en la región. Comenzamos con la comercialización de casas, departamentos, lotes y campos, brindando soluciones ágiles y seguras a propietarios e inversores.
         </p>
 
         <figure class="grafico-centrado">
-          <img src="../images/historia1.jpg" alt="Evolución y crecimiento de la empresa">
+          <img src="../images/historia1.jpg" alt="Evolución y crecimiento de la empresa" class="img-fluid">
           <figcaption>Crecimiento sostenido y diversificación de servicios a lo largo de los años</figcaption>
         </figure>
 
         <p>
           El crecimiento sostenido y la evolución constante del mercado nos impulsaron a diversificar nuestros servicios. Con el tiempo, incorporamos la administración profesional de alquileres de todo tipo de propiedades, ofreciendo gestión integral para inversores y propietarios.
         </p>
+
         <p>
           La expansión de la compañía estuvo acompañada por la creación de nuevas áreas estratégicas. Desarrollamos equipos especializados en tasaciones y corretaje, sumando además un sector de asesoría legal y fiscal para acompañar cada etapa de las operaciones inmobiliarias. Nuestro departamento de proyectos de inversión y fideicomisos permite actualmente brindar alternativas innovadoras, seguras y rentables para todo tipo de inversores.
         </p>
 
         <figure class="grafico-centrado">
-          <img src="../images/historia2.jpg" alt="Áreas de servicio inmobiliario">
+          <img src="../images/historia2.jpg" alt="Áreas de servicio inmobiliario" class="img-fluid">
           <figcaption>Servicios integrales: corretaje, tasaciones, asesoría legal, fideicomisos y más</figcaption>
         </figure>
 
@@ -76,39 +76,35 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer-jbsrur mt-5 pt-4 pb-3 border-top">
-  <div class="container">
-    <div class="row text-start text-md-start">
-      <div class="col-md-4 mb-3">
-        <img src="../images/logo.jpeg" alt="Logo Patagonia Clase B" class="mb-3" style="max-width: 150px;">
-        <p class="small">
-          PATAGONIA CLASE B - Desarrollos Inmobiliarios. Somos sinónimo de tradición y permanencia. Brindamos un servicio de experiencia que se adecua permanentemente a las nuevas tendencias y modalidades del negocio desarrollista inmobiliario.
-        </p>
+    <div class="container">
+      <div class="row text-start text-md-start">
+        <div class="col-12 col-md-4 mb-3">
+          <img src="../images/logo.jpeg" alt="Logo Patagonia Clase B" class="img-fluid mb-3" style="max-width: 150px;">
+          <p class="small">PATAGONIA CLASE B - Desarrollos Inmobiliarios...</p>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <h6><i class="bi bi-geo-alt-fill"></i> CASA CENTRAL</h6>
+          <p><span class="text-color-custom">Av. Vélez Sarsfield n° 898</span><br>Córdoba Capital, Argentina</p>
+          <p><strong>Ventas:</strong> <a href="tel:+5493516970411" class="text-color-custom">+54 9 351 688-7104</a><br>
+            <strong>Alquileres:</strong> <a href="tel:+5493516970410" class="text-color-custom">+54 9 351 2359666</a></p>
+          <p><i class="bi bi-envelope-fill"></i> <a href="mailto:recepcion@patagoniaclaseb.com.ar" class="text-color-custom">recepcion@patagoniaclaseb.com.ar</a></p>
+          <p><strong>Lunes a Viernes</strong><br>Ventas: 8:30 a 19hs<br>Alquileres: 8:30 a 19hs<br>Administración: 8:30 a 16hs</p>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <h6><i class="bi bi-geo-alt-fill"></i> ZONA NORTE</h6>
+          <p><span class="text-color-custom">Av. Rafael Nuñez n° 2225</span><br>Córdoba Capital, Argentina</p>
+          <p><strong>Lunes a Viernes</strong><br>Atención: 8:30 a 18hs</p>
+        </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <h6><i class="bi bi-geo-alt-fill"></i> CASA CENTRAL</h6>
-        <p><span class="text-color-custom">Av. Vélez Sarsfield n° 898</span><br>Córdoba Capital, Argentina</p>
-        <p><strong>Ventas:</strong> <a href="tel:+5493516970411" class="text-color-custom">+54 9 351 688-7104</a><br>
-           <strong>Alquileres:</strong> <a href="tel:+5493516970410" class="text-color-custom">+54 9 351 2359666</a></p>
-        <p><i class="bi bi-envelope-fill"></i> <a href="mailto:recepcion@patagoniaclaseb.com.ar" class="text-color-custom">recepcion@patagoniaclaseb.com.ar</a></p>
-        <p><strong>Lunes a Viernes</strong><br>
-           Ventas: 8:30hs a 19hs<br>
-           Alquileres: 8:30hs a 19hs<br>
-           Administración: 8:30hs a 16hs</p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h6><i class="bi bi-geo-alt-fill"></i> ZONA NORTE</h6>
-        <p><span class="text-color-custom">Av. Rafael Nuñez n° 2225</span><br>Córdoba Capital, Argentina</p>
-        <p><strong>Lunes a Viernes</strong><br> Atención: 8:30hs a 18hs</p>
+      <hr>
+      <div class="d-flex flex-column flex-md-row justify-content-between small text-center text-md-start">
+        <span>© 2025 Todos los derechos reservados</span>
+        <span>Desarrollado por <a href="#"><img src="/images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
       </div>
     </div>
-    <hr>
-    <div class="d-flex justify-content-between small">
-      <span>© 2025 Todos los derechos reservados</span>
-      <span>Desarrollado por <a href="#" class="text-dark"><img src="/images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

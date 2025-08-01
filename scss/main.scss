@@ -23,7 +23,7 @@ $transition-media: 0.3s;
   transition: $propiedad $duracion;
 }
 @mixin media-mobile {
-  @media (max-width: 600px) {
+  @media (max-width: 576px) {
     @content;
   }
 }
@@ -52,23 +52,46 @@ h1, h2, h3 {
 }
 
 // =====================
-// BODY
+// AJUSTE BODY POR HEADER FIJO
 // =====================
 body {
   background-color: $color-bg;
   color: $color-texto;
   line-height: 1.6;
   overflow-x: hidden;
+  padding-top: 180px; // Header + franja
+
+  @include media-mobile {
+    padding-top: 220px; // Más alto en mobile si header se agranda
+  }
 }
 
 // =====================
 // HEADER
 // =====================
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: $color-principal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
   img {
     width: 150px;
     height: auto;
+
+    @include media-mobile {
+      width: 120px;
+    }
   }
+}
+
+.franja-inferior {
+  height: 20px;
+  background-color: $color-bg;
+  width: 100%;
 }
 
 // =====================
@@ -128,7 +151,7 @@ footer {
 }
 
 // =====================
-// BOTONES REDES SOCIALES (clase)
+// REDES FIJAS
 // =====================
 .redes-fixed {
   position: fixed;
@@ -176,7 +199,6 @@ footer {
   }
 }
 
-// Variantes de color de botones (operador each)
 $btn-colores: (
   "primary": $color-principal,
   "success": #33b249,
@@ -190,24 +212,5 @@ $btn-colores: (
     &:hover {
       background: darken($valor, 8%);
     }
-  }
-}
-
-// =====================
-// MEDIA QUERIES
-// =====================
-@include media-mobile {
-  body {
-    font-size: 15px;
-    padding: 0 4px;
-  }
-  .container, main {
-    padding: 0 4px !important;
-  }
-  h1, h2 {
-    font-size: 1.3rem;
-  }
-  .card {
-    margin-bottom: 16px;
   }
 }
