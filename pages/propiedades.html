@@ -55,42 +55,51 @@
 
  <main class="container mt-5 pt-5 pt-md-4">
 
-    <section>
-      <h1 class="text-center mb-4">NUESTRAS PROPIEDADES</h1>
-      <div class="row">
-        <!-- Tarjetas principales -->
-        <div class="col-12 col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="../images/propiedades/1.jpg" class="card-img-top img-fluid" alt="Casa moderna con pileta en barrio cerrado" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">CASAS</h5>
-              <p class="card-text">Ubicada en barrio cerrado, 3 dormitorios, pileta y jardín.</p>
-              <a href="#galeria-casas" class="btn btn-primary mt-auto">VER</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="../images/portadadepartamentos.jpg" class="card-img-top img-fluid" alt="Departamento amplio con jardín para familias" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">DEPARTAMENTOS</h5>
-              <p class="card-text">Ideal para familia grande, ambientes luminosos y amplio jardín.</p>
-              <a href="#galeria-departamentos" class="btn btn-primary mt-auto">VER</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="../images/portadalotes.jpg" class="card-img-top img-fluid" alt="Lote céntrico con amenities y balcón" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">LOTES</h5>
-              <p class="card-text">2 ambientes en pleno centro con balcón y amenities.</p>
-              <a href="#galeria-lotes" class="btn btn-primary mt-auto">VER</a>
-            </div>
-          </div>
+ <section>
+  <h1 class="text-center mb-4">VENTA</h1>
+
+  <!-- Fila horizontal que mantiene 3 tarjetas una al lado de la otra incluso en mobile -->
+  <div class="row flex-nowrap overflow-auto gap-3 mb-4">
+
+    <!-- Tarjeta: CASAS -->
+    <div class="col-10 col-md-4 flex-shrink-0">
+      <div class="card h-100">
+        <img src="../images/propiedades/1.jpg" class="card-img-top img-fluid" alt="Casa moderna con pileta en barrio cerrado" />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">CASAS</h5>
+          <p class="card-text">Ubicada en barrio cerrado, 3 dormitorios, pileta y jardín.</p>
+          <a href="#galeria-casas" class="btn btn-primary mt-auto">VER</a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Tarjeta: DEPARTAMENTOS -->
+    <div class="col-10 col-md-4 flex-shrink-0">
+      <div class="card h-100">
+        <img src="../images/portadadepartamentos.jpg" class="card-img-top img-fluid" alt="Departamento amplio con jardín para familias" />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">DEPARTAMENTOS</h5>
+          <p class="card-text">Ideal para familia grande, ambientes luminosos y amplio jardín.</p>
+          <a href="#galeria-departamentos" class="btn btn-primary mt-auto">VER</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta: LOTES -->
+    <div class="col-10 col-md-4 flex-shrink-0">
+      <div class="card h-100">
+        <img src="../images/portadalotes.jpg" class="card-img-top img-fluid" alt="Lote céntrico con amenities y balcón" />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">LOTES</h5>
+          <p class="card-text">2 ambientes en pleno centro con balcón y amenities.</p>
+          <a href="#galeria-lotes" class="btn btn-primary mt-auto">VER</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- GALERÍA CASAS -->
     <section id="galeria-casas" class="my-5">
@@ -181,7 +190,7 @@
       <hr>
       <div class="d-flex flex-column flex-md-row justify-content-between small text-center text-md-start">
         <span>© 2025 Todos los derechos reservados</span>
-        <span>Desarrollado por <a href="#"><img src="/images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
+        <span>Desarrollado por <a href="#"><img src="../images/sololetraslogo.png" alt="Puntoindependiente" style="height: 50px;"></a></span>
       </div>
     </div>
   </footer>

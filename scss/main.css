@@ -148,3 +148,11 @@ footer {
 .btn-accent:hover {
   background: #0c82df;
 }
+.row.flex-nowrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+.row.flex-nowrap::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}

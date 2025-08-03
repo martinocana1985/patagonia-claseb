@@ -327,3 +327,39 @@ form .form-label {
     margin-bottom: 16px;
   }
 }
+/* ======== BOTONES COMPRAR / ALQUILAR ======== */
+.btn-header {
+  background-color: #0e0e0c; /* mismo color que el header */
+  color: #f5f5f5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+  max-width: 220px; /* mantiene el mismo ancho en desktop */
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-header:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/* Alineación responsiva */
+.botones-carrusel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .botones-carrusel-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
